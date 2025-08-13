@@ -4,6 +4,10 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
 }
 nav {
   font-size: 1.25rem;
@@ -33,9 +37,6 @@ nav a:hover {
 }
 main {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
   justify-content: flex-start; /* Align all content to left */
   align-items: flex-start;
   width: 100vw;  /* full width of viewport */
