@@ -33,6 +33,9 @@ nav a:hover {
 }
 main {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   justify-content: flex-start; /* Align all content to left */
   align-items: flex-start;
   width: 100vw;  /* full width of viewport */
