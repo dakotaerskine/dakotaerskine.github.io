@@ -10,7 +10,7 @@ body {
   height: 100%;
 }
 nav {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 2.5em 0em;
   display: flex;
   justify-content: flex-start; /* everything aligns to the left */
@@ -43,17 +43,18 @@ main {
   gap: 3rem; /* space between left and right sections */
 }
 .left-section {
-  flex: 0 0 180px;
+  flex: 0 0 220px;
+  text-align: center;
 }
 .left-section img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   padding: 1em 0
 }
 .title {
-  margin-top: 0.5rem;
+  padding: 0 0.5em;
   color: #555;
 }
 .links {
@@ -66,14 +67,12 @@ main {
 .links a {
   color: #333;
   text-decoration: none;
-  font-size: 1.25rem;
 }
 .links a:hover {
   text-decoration: none;
 }
 .right-section {
   flex: 1;
-  font-size: 1.25rem;
   line-height: 1.6;
   padding-left: 2rem; /* add spacing between left and right sections */
 }
