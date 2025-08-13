@@ -24,7 +24,7 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-nav .logo {
+nav .logo a {
   font-weight: bold;
 }
 nav a {
