@@ -33,16 +33,14 @@ nav a:hover {
 }
 main {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start; /* Align all content to left */
   align-items: flex-start;
-  justify-content: center;
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-  gap: 2rem;
+  width: 100vw;  /* full width of viewport */
+  padding: 2rem 4rem; /* add horizontal padding */
+  gap: 3rem; /* space between left and right sections */
 }
 .left-section {
-  flex: 0 0 auto;
+  flex: 0 0 180px;
   text-align: center;
 }
 .left-section img {
@@ -81,4 +79,9 @@ footer {
   font-size: 0.85rem;
   color: #6b7280;
   text-align: center;
+}
+hr.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0;
 }
