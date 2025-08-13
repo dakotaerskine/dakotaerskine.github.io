@@ -51,6 +51,7 @@ main {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  padding: 1em 0
 }
 .title {
   margin-top: 0.5rem;
