@@ -39,7 +39,6 @@ main {
   display: flex;
   justify-content: flex-start; /* Align all content to left */
   align-items: flex-start;
-  width: 100vw;  /* full width of viewport */
   padding: 2rem 4rem; /* add horizontal padding */
   gap: 3rem; /* space between left and right sections */
 }
@@ -48,8 +47,8 @@ main {
   text-align: center;
 }
 .left-section img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -77,6 +76,7 @@ main {
   flex: 1;
   font-size: 1rem;
   line-height: 1.6;
+  padding-left: 2rem; /* add spacing between left and right sections */
 }
 footer {
   flex-shrink: 0;
