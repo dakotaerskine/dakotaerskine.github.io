@@ -1,86 +1,82 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f9fafb;
   color: #333;
-  margin: 0;
-  padding: 0 10em;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  height: 100%;
 }
-nav {
-  font-size: 1.5rem;
-  padding: 2em 0em;
+
+/* Layout wrapper for columns */
+.container {
+  flex: 1;
   display: flex;
-  justify-content: flex-start; /* everything aligns to the left */
-  align-items: center;
-  gap: 2.5rem; /* space between logo and links */
+  padding: 2rem 4rem;
+  gap: 3rem;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem; /* spacing between links */
-  margin: 0;
-  padding: 0;
-}
-nav .logo a {
-  font-weight: bold;
-}
-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-}
-nav a:hover {
-  text-decoration: none;
-}
-main {
-  display: flex;
-  flex: 1 0 auto; /* allow main to grow and push footer down */
-  justify-content: flex-start; /* Align all content to left */
-  align-items: flex-start;
-  gap: 3rem; /* space between left and right sections */
-}
+
+/* Left section styling */
 .left-section {
-  flex: 0 0 200px;
+  flex: 0 0 220px;
   text-align: center;
 }
+
 .left-section img {
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  padding: 1em 0
 }
+
+.logo {
+  margin-top: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
 .title {
-  padding: 0 0.5em;
-  color: #333;
-}
-.links {
-  margin-top: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: left;
-}
-.links a {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
   color: #555;
+}
+
+/* Navigation under photo and title */
+.left-section nav {
+  margin-top: 1.5rem;
+}
+
+.left-section nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-section nav li {
+  margin: 0.5rem 0;
+}
+
+.left-section nav a {
+  color: #2563eb;
   text-decoration: none;
 }
-.links a:hover {
-  text-decoration: none;
+
+.left-section nav a:hover {
+  text-decoration: underline;
 }
+
+/* Right section (main content) */
 .right-section {
   flex: 1;
+  font-size: 1rem;
   line-height: 1.6;
-  padding-left: 2rem; /* add spacing between left and right sections */
 }
+
+/* Footer */
 footer {
-  flex-shrink: 0;
   padding: 1rem 0;
-  margin-top: 2rem;
   font-size: 0.85rem;
   color: #6b7280;
   text-align: center;
+  border-top: 1px solid #ddd;
 }
