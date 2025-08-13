@@ -3,7 +3,7 @@ body {
   background-color: #f9fafb;
   color: #333;
   margin: 0;
-  padding: 3em 0;
+  padding: 0 3em;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,7 +11,7 @@ body {
 }
 nav {
   font-size: 1.25rem;
-  padding: 0 5em;
+  padding: 5em 0;
   display: flex;
   justify-content: flex-start; /* everything aligns to the left */
   align-items: center;
