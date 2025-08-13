@@ -11,7 +11,7 @@ body {
 }
 nav {
   font-size: 1.5rem;
-  padding: 2.5em 0em;
+  padding: 2em 0em;
   display: flex;
   justify-content: flex-start; /* everything aligns to the left */
   align-items: center;
