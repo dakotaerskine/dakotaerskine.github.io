@@ -37,6 +37,7 @@ nav a:hover {
 }
 main {
   display: flex;
+  flex: 1 0 auto; /* allow main to grow and push footer down */
   justify-content: flex-start; /* Align all content to left */
   align-items: flex-start;
   padding: 2rem 4rem; /* add horizontal padding */
