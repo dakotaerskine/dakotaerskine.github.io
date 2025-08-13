@@ -53,9 +53,14 @@ main {
   object-fit: cover;
   padding: 1em 0
 }
+.name {
+  padding: 0 0.5em;
+  color: #333;
+  font-weight: bold;
+}
 .title {
   padding: 0 0.5em;
-  color: #555;
+  color: #333;
 }
 .links {
   margin-top: 0.75rem;
@@ -65,7 +70,7 @@ main {
   align-items: left;
 }
 .links a {
-  color: #2563eb;
+  color: #555;
   text-decoration: none;
 }
 .links a:hover {
