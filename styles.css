@@ -20,7 +20,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem; /* spacing between links */
+  gap: 2rem; /* spacing between links */
   margin: 0;
   padding: 0;
 }
@@ -31,6 +31,7 @@ nav a {
   color: #333;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.15em
 }
 nav a:hover {
   text-decoration: underline;
