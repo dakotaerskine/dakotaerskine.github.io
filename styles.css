@@ -44,7 +44,6 @@ main {
 }
 .left-section {
   flex: 0 0 180px;
-  text-align: center;
 }
 .left-section img {
   width: 150px;
