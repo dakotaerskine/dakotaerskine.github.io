@@ -1,83 +1,96 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9fafb;
-  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Layout wrapper for columns */
 .container {
   flex: 1;
   display: flex;
   padding: 2rem 4rem;
-  gap: 3rem;
+  gap: 4rem;
 }
 
-/* Left section styling */
+/* Left section */
 .left-section {
-  flex: 0 0 220px;
-  text-align: center;
+  flex: 0 0 240px;
+  text-align: left;
 }
-
 .left-section img {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  padding: 1em;
 }
-
 .logo {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
-
 .title {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  font-weight: 300;
   color: #555;
 }
 
-/* Navigation under photo and title */
-.left-section nav {
-  margin-top: 1.5rem;
+nav {
+  margin-top: 2rem;
 }
-
-.left-section nav ul {
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-.left-section nav li {
-  margin: 0.5rem 0;
+nav li {
+  margin: 0.6rem 0;
 }
-
-.left-section nav a {
-  color: #2563eb;
+nav a {
+  color: inherit;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+nav a:hover {
+  opacity: 0.6;
 }
 
-.left-section nav a:hover {
-  text-decoration: underline;
-}
-
-/* Right section (main content) */
+/* Right section */
 .right-section {
   flex: 1;
-  font-size: 1rem;
-  line-height: 1.6;
+  max-width: 900px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.right-section h1, .right-section h2 {
+  font-weight: 500;
+  margin-top: 0;
 }
 
 /* Footer */
 footer {
-  padding: 1rem 0;
+  padding: 2rem 4rem;
   font-size: 0.85rem;
-  color: #6b7280;
-  text-align: center;
-  border-top: 1px solid #ddd;
+  color: #777;
+  text-align: left;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .left-section {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
 }
