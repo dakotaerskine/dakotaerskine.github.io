@@ -116,6 +116,7 @@ footer {
   padding: 2rem 6rem;
   font-size: 0.85rem;
   color: #888;
+  text-align: center;
 }
 
 /* Sidebar icons */
@@ -130,6 +131,7 @@ footer {
 .sidebar-icons a img {
   width: 24px;
   height: 24px;
+  border-radius: 0;
   filter: grayscale(100%); /* subtle, minimalist look */
   transition: filter 0.2s ease, transform 0.2s ease;
 }
