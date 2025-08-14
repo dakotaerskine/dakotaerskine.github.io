@@ -45,13 +45,13 @@ body {
 .title {
   font-size: 1rem;
   font-weight: 300;
-  color: #555;
+  color: #222;
   margin-top: 0.3rem;
 }
 
 .institution {
   font-weight: 300;
-  color: #555;
+  color: #222;
   margin-top: 0.2rem;
 }
 
@@ -69,7 +69,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #222;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   position: relative;
@@ -160,7 +160,7 @@ footer {
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  color: #111;
+  color: #222;
 }
 
 .pub-title:hover {
@@ -175,7 +175,7 @@ footer {
 
 .pub-links {
   font-size: 0.95rem;
-  color: #333;
+  color: #222;
 }
 
 .pub-links a {
