@@ -118,6 +118,27 @@ footer {
   color: #888;
 }
 
+/* Sidebar icons */
+.sidebar-icons {
+  margin-top: auto; /* push to bottom */
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* center horizontally in sidebar */
+  padding-top: 2rem;
+}
+
+.sidebar-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%); /* subtle, minimalist look */
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar-icons a:hover img {
+  filter: none; /* show full color or normal icon */
+  transform: translateY(-2px);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
