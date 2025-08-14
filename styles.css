@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #fdfdfd;
-  color: #222;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -45,13 +45,13 @@ body {
 .title {
   font-size: 1rem;
   font-weight: 300;
-  color: #222;
+  color: #333;
   margin-top: 0.3rem;
 }
 
 .institution {
   font-weight: 300;
-  color: #222;
+  color: #333;
   margin-top: 0.2rem;
 }
 
@@ -69,7 +69,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #222;
+  color: #333;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   position: relative;
@@ -81,7 +81,7 @@ nav a::after {
   bottom: -3px;
   height: 1px;
   width: 0;
-  background: #222;
+  background: #333;
   transition: width 0.2s ease;
 }
 nav a:hover::after {
@@ -160,7 +160,7 @@ footer {
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  color: #222;
+  color: #333;
 }
 
 .pub-title:hover {
@@ -175,7 +175,7 @@ footer {
 
 .pub-links {
   font-size: 0.95rem;
-  color: #222;
+  color: #333;
 }
 
 .pub-links a {
