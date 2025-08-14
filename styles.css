@@ -19,7 +19,7 @@ body {
 /* Left column (fixed) */
 .sidebar {
   flex: 0 0 350px;
-  padding: 4rem 3rem;
+  padding: 4rem 3rem 0 3rem;
   position: fixed;
   top: 0;
   left: 0;
