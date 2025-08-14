@@ -18,8 +18,8 @@ body {
 
 /* Left column (fixed) */
 .sidebar {
-  flex: 0 0 350px;
-  padding: 4rem 3rem 0 3rem;
+  flex: 0 0 400px;
+  padding: 4rem 3rem 0 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -92,7 +92,7 @@ nav a:hover::after {
 
 /* Right column */
 .main {
-  margin-left: 350px;
+  margin-left: 400px;
   padding: 4rem 6rem;
   flex: 1;
 }
