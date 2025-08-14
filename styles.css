@@ -51,7 +51,7 @@ body {
 
 .institution {
   font-weight: 300;
-  color: #777;
+  color: #555;
   margin-top: 0.2rem;
 }
 
@@ -169,13 +169,13 @@ footer {
 
 .pub-meta {
   font-size: 0.95rem;
-  color: #666;
+  color: #555;
   margin: 0.3rem 0;
 }
 
 .pub-links {
   font-size: 0.95rem;
-  color: #444;
+  color: #333;
 }
 
 .pub-links a {
