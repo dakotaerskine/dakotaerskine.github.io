@@ -1,46 +1,65 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Base */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
+  background: #fdfdfd;
   color: #222;
+  line-height: 1.6;
+}
+
+/* Layout */
+.container {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 
-.container {
-  flex: 1;
+/* Left column (fixed) */
+.sidebar {
+  flex: 0 0 300px;
+  padding: 4rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   display: flex;
-  padding: 4rem 8rem;
-  gap: 4rem;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-/* Left section */
-.left-section {
-  flex: 0 0 350px;
-  text-align: left;
-}
-.left-section img {
-  width: 140px;
-  height: 140px;
+.sidebar img {
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
 }
-.logo {
-  margin-top: 1.2rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  letter-spacing: -0.5px;
 }
+
 .title {
-  margin-top: 0.4rem;
   font-size: 1rem;
   font-weight: 300;
   color: #555;
+  margin-top: 0.3rem;
 }
 
+.institution {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #777;
+  margin-top: 0.2rem;
+}
+
+/* Navigation */
 nav {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 nav ul {
   list-style: none;
@@ -48,49 +67,73 @@ nav ul {
   margin: 0;
 }
 nav li {
-  margin: 0.6rem 0;
+  margin-bottom: 0.8rem;
 }
 nav a {
-  color: inherit;
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 400;
-  transition: opacity 0.2s ease;
+  font-size: 0.95rem;
+  color: #333;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
 }
-nav a:hover {
-  opacity: 0.6;
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 0;
+  background: #222;
+  transition: width 0.2s ease;
+}
+nav a:hover::after {
+  width: 100%;
 }
 
-/* Right section */
-.right-section {
+/* Right column */
+.main {
+  margin-left: 300px;
+  padding: 4rem 6rem;
   flex: 1;
-  max-width: 900px;
-  font-size: 1.05rem;
-  line-height: 1.7;
 }
-.right-section h1, .right-section h2 {
-  font-weight: 500;
-  margin-top: 0;
+
+.section {
+  max-width: 700px;
+  margin-bottom: 6rem; /* extra spacing instead of lines */
+  scroll-margin-left: 320px;
+}
+
+.section h1,
+.section h2 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  margin-bottom: 1.2rem;
 }
 
 /* Footer */
 footer {
-  padding: 2rem 4rem;
+  margin-left: 300px;
+  padding: 2rem 6rem;
   font-size: 0.85rem;
-  color: #777;
-  text-align: center;
+  color: #888;
 }
 
-/* Responsive for mobile */
+/* Responsive */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+  }
+  .sidebar {
+    position: static;
+    height: auto;
+    flex: none;
     padding: 2rem;
-  }
-  .left-section {
+    align-items: center;
     text-align: center;
   }
-  footer {
-    text-align: center;
+  .main, footer {
+    margin-left: 0;
+    padding: 2rem;
   }
 }
