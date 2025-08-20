@@ -178,11 +178,13 @@ footer {
   color: #333;
 }
 
+.main p a,
 .pub-links a {
   color: inherit;
   text-decoration: none;
 }
 
+.main p a:hover,
 .pub-links a:hover {
   text-decoration: underline;
 }
