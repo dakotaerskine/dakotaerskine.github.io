@@ -189,6 +189,43 @@ footer {
   text-decoration: underline;
 }
 
+.exp {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.exp-thumb {
+  width: 10px;
+  height: 10px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #f0f0f0;
+}
+
+.exp-info {
+  flex: 1;
+}
+
+.exp-role {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.exp-meta,
+.exp-meta a {
+  font-size: 0.95rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.exp-info p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
