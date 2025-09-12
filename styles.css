@@ -92,7 +92,6 @@ nav a:hover::after {
 }
 
 .section {
-  max-width: 850px;
   margin-bottom: 6rem; /* extra spacing instead of lines */
   scroll-margin-left: 320px;
 }
