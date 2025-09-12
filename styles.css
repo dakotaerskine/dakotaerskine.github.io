@@ -65,6 +65,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
+  color: #000;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   position: relative;
@@ -169,6 +170,7 @@ footer {
 
 .pub-links {
   font-size: 0.95rem;
+  color: #000;
 }
 
 .main p a,
